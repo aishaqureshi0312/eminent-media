@@ -427,6 +427,12 @@ body {
   font-size: 20px;
 }
 
+.services .photography img {
+  height: 100%;
+  width: 100%;
+  padding-top: 15px;
+}
+
 .team .personsData {
   z-index: 1;
   position: absolute;
