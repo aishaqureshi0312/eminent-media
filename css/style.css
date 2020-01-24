@@ -486,6 +486,10 @@ body {
   height: 500px;
 }
 
+.services .card_show {
+  margin-top: 15px;
+}
+
 .services .card_show:hover .card_hover {
   display: block !important;
 }

@@ -175,7 +175,6 @@ background: linear-gradient(180deg, rgba(206,1,24,1) 0%, var(--color_black) 100%
   src: url(../font/Muli-Bold.ttf);
 }
 
-
 //Sizes
 h1 {
   font-size: 94px;
@@ -462,6 +461,10 @@ body {
     height: 500px;
   }
 
+  .card_show{
+    margin-top: 15px;
+  }
+
   .card_show:hover{
     .card_hover{
       display: block !important;
@@ -476,9 +479,6 @@ body {
     width: 100%;
     background-color: var(--color_red);
   }
-
-
-  
 }
 
 .team{
