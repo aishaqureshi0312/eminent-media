@@ -213,7 +213,7 @@ h4 {
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .bold {
@@ -277,6 +277,10 @@ body {
   padding-left: 0px;
 }
 
+.height_517 {
+  min-height: 517px;
+}
+
 .main_navigation {
   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 }
@@ -324,11 +328,11 @@ body {
 }
 
 .footer .column-inner p {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .footer .column-inner a {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #more {
@@ -394,6 +398,8 @@ body {
 .gallery_column img {
   vertical-align: middle;
   width: 100%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .column_overlay {
@@ -404,6 +410,10 @@ body {
 
 .column_overlay a {
   text-decoration: none;
+}
+
+.gallery_column:hover img {
+  scale: 1.2;
 }
 
 .gallery_column:hover .column_overlay {
@@ -422,7 +432,7 @@ body {
 }
 
 .services ul li {
-  margin-bottom: 20px;
+  margin-top: 35px;
   color: var(--color_black);
   font-size: 20px;
 }
@@ -431,6 +441,51 @@ body {
   height: 100%;
   width: 100%;
   padding-top: 15px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.services .photography .img_hover:hover img {
+  scale: 1.2;
+  -webkit-filter: brightness(0.6);
+          filter: brightness(0.6);
+}
+
+.services .photography .overlay_image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services .card_group {
+  height: 500px;
+}
+
+.services .card_show:hover .card_hover {
+  display: block !important;
+}
+
+.services .card_hover {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  z-index: 1;
+  width: 100%;
+  background-color: var(--color_red);
 }
 
 .team .personsData {
